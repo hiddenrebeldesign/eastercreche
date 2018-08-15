@@ -1572,14 +1572,19 @@ pre code {
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .container {
-    width: 970px;
+    width: 850px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
   .container {
-    width: 1170px;
+    width: 1020px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1160px;
   }
 }
 .container-fluid {

@@ -852,7 +852,7 @@ a,
   background-color: #FFFFFF;
   border: 1px solid #E3E3E3;
   border-radius: 4px;
-  color: #444444;
+  color: #FFF;
   padding: 10px 10px;
   height: 40px;
   -webkit-box-shadow: none;
@@ -1105,7 +1105,7 @@ a,
   display: block;
   z-index: 3;
   content: "";
-  opacity: .5;
+  opacity: .4;
   background: #222;
 }
 .filter .title-area .description {
@@ -3764,3 +3764,24 @@ body {
 
 
 
+
+
+
+.center-text {
+  text-align: center;
+}
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.center-div
+{
+     margin: 0 auto;
+     /*width: 100px;*/ 
+}
