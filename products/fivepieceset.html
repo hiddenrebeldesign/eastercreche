@@ -569,24 +569,77 @@
   </div>
 
 
-		<div class="section section-small section-get-started">
-				<div class="parallax filter">
-						<div class="image"
-								style="background-image: url('../assets/img/backgrounds/jesus.jpg')">
-						</div>
-						<div class="container">
-								<div class="title-area">
-										<h2 class="text-white">Questions?</h2>
-										<div class="separator line-separator">♦</div>
-										<p class="description"> Show me your ways, Yahweh. Teach me your paths. Guide me in your truth, and teach me, For you are the God of my salvation, I wait for you all day long. Yahweh, remember your tender mercies and your loving kindness, for they are from old times. Don't remember the sins of my youth, nor my transgressions. Remember me according to your loving kindness, for your goodness' sake, Yahweh.</p>
-										<a href="#" class="btn btn-danger btn-fill" target="_blank">Contact Us</a>
-								</div>
-								<div>
-									
-								</div>
-						</div>
-				</div>
-		</div>
+<!-- CONTACT AREA BEGIN -->
+
+<div class="section section-small section-get-started">
+    <div class="parallax filter">
+        <div class="image"
+            style="background-image: url('../assets/img/backgrounds/jesus.jpg')"></div>
+            <div class="container">
+                <div class="title-area">
+                    <h2>Contact Us</h2>
+                    <div class="separator separator-danger">♦</div>
+                    <p class="description col-md-8 col-md-offset-2">Please use this form to contact us with any questions or comments you may have and we will get back to you as soon as possible!</p>
+                </div>
+
+                <!-- CONTACT FORM -->
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="contact-form">
+                        <form id="contact-form" action="https://formspree.io/hiddenrebeldesign@gmail.com" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Your Full Name</label>
+                                        <input type="text" name="name" value="" placeholder="Jane Doe" class="form-control form-control-plain" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Your Email</label>
+                                        <input type="text" name="email" value="" placeholder="jane.doe@gmail.com" class="form-control form-control-plain" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Subject</label>
+                                        <input type="text" name="subject" value="" placeholder="(subject)" class="form-control form-control-plain" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="content" class="form-control form-control-plain" placeholder="(message)" rows="6" autocomplete="off"></textarea>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-2 col-md-offset-5">
+                                            <input type="submit" value="Submit" class="btn btn-danger btn-fill">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+
+              // FORM VALIDATION
+
+            var frmvalidator  = new Validator("contact-form");
+            frmvalidator.addValidation("name","req","Please enter your name");
+            frmvalidator.addValidation("email","req","Please enter your email");
+            frmvalidator.addValidation("email","email","Please enter a valid email address");
+            frmvalidator.addValidation("subject","req","Please enter a subject");
+                </script>
+
+                <!-- CONTACT FORM END -->
+
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT AREA END -->
 
 <!-- FOOTER -->
 
