@@ -32,8 +32,8 @@
 @media (max-width: 768px) {
   .gallery .thumbs {
     height: 80px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    /*overflow-x: auto;*/
+    /*overflow-y: hidden;*/
   }
 }
 
