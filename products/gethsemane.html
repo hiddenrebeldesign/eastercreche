@@ -109,43 +109,42 @@
 
             <!-- BUY BUTTON -->
 
-            <div class="center-div" id='product-component-6bec0ae1d6f'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
+            <div class="center-div" id='product-component-bce3324cffc'></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
 
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
 
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
 
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'easter-creche-3.myshopify.com',
-      apiKey: '4d104338f1bd1031b200ba134ec2ba09',
-      appId: '6',
-    });
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'easter-creche-3.myshopify.com',
+          storefrontAccessToken: '4d104338f1bd1031b200ba134ec2ba09',
+        });
 
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: [1751568132],
-        node: document.getElementById('product-component-6bec0ae1d6f'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [8240183624],
+            node: document.getElementById('product-component-bce3324cffc'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
   "product": {
     "variantId": "all",
     "width": "240px",
@@ -251,12 +250,12 @@
     }
   }
 }
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
 					</div>
 
 				<!-- GALLERY -->
